@@ -5,153 +5,244 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>The Tech Chasm</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<head>
+	<title>The Tech Chasm</title>
+	<link rel="icon" type="image/x-icon" href="/images/thunder-s-icon.png">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<title>Contact Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript">
+        (function() {
+            // Initialize EmailJS
+            emailjs.init({
+                publicKey: "ZQKpwfu8STEYdc4uG",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
 
-				<!-- Intro -->
-					<div id="intro">
-						<h3>You are now entering</h3>
-						<h1>
-						The Tech Chasm</h1>
-						</br>
-						<h2>Bridging ideas. Connecting innovators.</h2>
-						</br>
+                // Send form using EmailJS
+                emailjs.sendForm('service_ci9wu4d', 'template_h2gbxel', this)
+                    .then(() => {
+                        // Success notification
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Message Sent!',
+                            text: 'Your message has been successfully sent. Thank you!',
+                        });
+                        this.reset(); // Clear the form
+                    }, (error) => {
+                        // Error notification
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Message Failed',
+                            text: 'Sorry, your message could not be sent. Please try again.',
+                        });
+                        console.error('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Intro -->
+		<div id="intro">
+			<h3>You are now entering</h3>
+			<h1>
+				The Tech </h1>
+			<h1>Cha<img id="thunder-s" src="./images/thunder-s.png" alt="s">m</h1>
+			</br>
+			<h2>Bridging ideas. Connecting innovators.</h2>
+			</br>
+			<p>
+				Join us as we dive into the world of technology, where new ideas meet collaboration. </br> Connect with
+				like-minded tech enthusiasts and explore the possibilities of tomorrow.</p>
+			<ul class="actions">
+				<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+			</ul>
+		</div>
+
+		<!-- Header -->
+		<header id="header">
+			<a href="#nav" class="logo">The Tech Cha<img id="thunder-s2" src="./images/thunder-s.png" alt="s">m</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li class="active"><a href="#nav">Enter the Chasm</a></li>
+				<li><a href="#postsheader">Past Meetups</a></li>
+				<li><a href="#contactsFooter">Contact Us</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Featured Post -->
+			<article class="post featured">
+
+				<h1 id="main-article-header"><a href="https://www.meetup.com/the-tech-chasm/">Join us at our meetups!</a></h1>
+
+
+				<img class="image main" src="images/meetup-room.jpg" alt="" />
+
+
+
+				<p>Check out our monthly meetup page at <a
+						href="https://www.meetup.com/the-tech-chasm/">https://www.meetup.com/the-tech-chasm/</a>, where we host
+					insightful discussions on technology, innovation, and the future. The primary goal for this group is to foster
+					connections among individuals passionate about tech, creating a vibrant community of forward-thinking
+					professionals.</p>
+
+				<ul class="actions special">
+					<li><a href="https://www.meetup.com/the-tech-chasm/" class="button large">Sign Up</a></li>
+				</ul>
+
+				<h3><a href="https://www.meetup.com/the-tech-chasm/events/305383057/?eventOrigin=group_events_list">Next meetup:
+						January 28, 2025 at 2pm!</h3>
+				<h3> CRM Solutions: Client Management Made Simple presented by Mumtahin Farabi.</h3> </a>
+				<p>RSVP your spot at <a
+						href="https://www.meetup.com/the-tech-chasm/events/305383057/?eventOrigin=group_events_list">https://www.meetup.com/the-tech-chasm/events/305383057/?eventOrigin=group_events_list
 						<p>
-							Join us as we dive into the world of technology, where new ideas meet collaboration. </br> Connect with like-minded tech enthusiasts and explore the possibilities of tomorrow.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
+							<img src="images/CRM.png" class="current-event" alt="">
+					</a>
+
+
+
+			</article>
+			<!-- posts headeer -->
+			<section id="postsheader">
+				<h1 id="previous-meetups">Our past meetups</h1>
+			</section>
+			<!-- Posts -->
+			<section class="posts">
+				<article class="article-container">
+					<header>
+						<span class="date">Sunday, November 24, 2024</span>
+						<h2><a href="https://www.meetup.com/the-tech-chasm/events/304472431/">FinTech 101: The Revolution of
+								Financial Services</a></h2>
+					</header>
+					<!-- <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
+					<div class='text-container'>
+						<p>Join us for an introductory session exploring the world of FinTech! We'll dive into the origins of
+							financial technology, its rapid growth, and how it's transforming the financial industry. Learn about the
+							exciting career paths in FinTech, and the skills that are in demand. We'll also cover key trends shaping
+							FinTech’s future—like AI, blockchain, and green finance—and spotlight top companies and industry leaders
+							driving innovation. Perfect for anyone curious about tech sales, finance, or simply the future of
+							financial services!</p>
 					</div>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">The Tech Chasm</a>
+					<ul class="actions special">
+						<li><a href="https://www.meetup.com/the-tech-chasm/events/304472431/" class="button">Full Story</a></li>
+					</ul>
+				</article>
+				<article class="article-container">
+					<header>
+						<span class="date">Saturday, September 28, 2024</span>
+						<h2><a href="https://www.meetup.com/the-tech-chasm/events/303553003/">Code To Container: Simplifying
+								Container Orchestrations For Your Projects</a></h2>
 					</header>
+					<!-- <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a> -->
+					<div class='text-container'>
+						<p>Join us for an insightful talks and networking. Our speaker will be Win, a Software Engineer, and he will
+							go over the Container Orchestration topic.</p>
+					</div>
+					<ul class="actions special">
+						<li><a href="https://www.meetup.com/the-tech-chasm/events/303553003/" class="button">Full Story</a></li>
+					</ul>
+				</article>
+				<article class="article-container">
+					<header>
+						<span class="date">Saturday, September 14, 2024</span>
+						<h2><a href="https://www.meetup.com/the-tech-chasm/events/303249056/">Linux Fundamentals For Developers</a>
+						</h2>
+					</header>
+					<!-- <a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a> -->
+					<div class='text-container'>
+						<p> Join us for an insightful talks and networking. Our speaker Martin Ha is a Software Engineer and he will
+							go over the fundamental of linux.</p>
+					</div>
+					<ul class="actions special">
+						<li><a href="https://www.meetup.com/the-tech-chasm/events/303249056/" class="button">Full Story</a></li>
+					</ul>
+				</article>
+				<article class="article-container">
+					<header>
+						<span class="date">Saturday, Aug 31, 2024</span>
+						<h2><a href="https://www.meetup.com/the-tech-chasm/events/302937423/">AI Impact - Transforming Cold Calling
+								and Email Outreach</a></h2>
+					</header>
+					<!-- <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a> -->
+					<div class='text-container'>
+						<p> Join us for an evening of insightful talks and networking as we delve into the impact of AI on business
+							development. The event will begin with a warm welcome, followed by a talk covering the evolution of
+							traditional business development practices. We’ll explore how AI is reshaping email outbound and cold
+							calling, with a focus on the technologies behind this shift, including Clay and Orum. The evening will
+							conclude with an opportunity for networking, where you can connect with like-minded professionals and
+							discuss the future of AI-driven strategies in business.</p>
+					</div>
+					<ul class="actions special">
+						<li><a href="https://www.meetup.com/the-tech-chasm/events/302937423/" class="button">Full Story</a></li>
+					</ul>
+				</article>
+				<article class="article-container">
+					<header>
+						<span class="date">Sat, Jul 27, 2024</span>
+						<h2><a href="https://www.meetup.com/the-tech-chasm/events/302235909/">Style your Reactjs App with Tailwind
+								CSS for beginners<br />
+							</a></h2>
+					</header>
+					<!-- <a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a> -->
+					<div class='text-container'>
+						<p>Hey all! This time we will be going through setting up Tailwind CSS in the weather app we built. And use
+							free tailwind components to style it.</p>
+					</div>
+					<ul class="actions special">
+						<li><a href="https://www.meetup.com/the-tech-chasm/events/302235909/" class="button">Full Story</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<span class="date">Sat, Jul 13, 2024,</span>
+						<h2><a href="https://www.meetup.com/the-tech-chasm/events/302116008/">Introduction To ReactJs For
+								Beginners</a></h2>
+					</header>
+					<!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
+					<p>We will go over the basics of React and key concepts you will need to understand to get started as a
+						beginner.</p>
+					<ul class="actions special">
+						<li><a href="https://www.meetup.com/the-tech-chasm/events/302116008/" class="button">Full Story</a></li>
+					</ul>
+				</article>
+			</section>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Enter the Chasm</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">Join us at our meetups!</a></h2>
-									
-								</header>
-								<a href="#" class="image main"><img src="images/meetup-room.jpg" alt="" /></a>
-
-								<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor
-									amet nullam sed etiam veroeros.</p>
-
-								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
-								</ul>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 22, 2017</span>
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 7, 2017</span>
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-							</section>
-
-						<!-- Footer -->
-							<footer>
+			<!-- Footer -->
+			<!-- <footer>
 								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="#" class="previous">Prev</a>
 									<a href="#" class="page active">1</a>
 									<a href="#" class="page">2</a>
 									<a href="#" class="page">3</a>
@@ -161,74 +252,110 @@
 									<a href="#" class="page">10</a>
 									<a href="#" class="next">Next</a>
 								</div>
-							</footer>
+							</footer> -->
 
+		</div>
+
+		<!-- Footer -->
+
+		<footer id="footer">
+
+			<section>
+				<section>
+					<h4>Interested in doing a talk? Reach out to us:</h4>
+				</section>
+				<!-- <form method="POST" action="send-email.php">
+					<div class="fields">
+						<div class="field">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="3"></textarea>
+						</div>
 					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" /></li>
+					</ul>
+				</form> -->
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
+
+					<form id="contact-form">
+						<!-- To simplify the tutorial, the value is static. -->
+						<input type="hidden" name="contact_number" value="ZQKpwfu8STEYdc4uG">
+						<label>Name</label>
+						<input type="text" name="name">
+						<label>Email</label>
+						<input type="email" name="email">
+						<label>Message</label>
+						<textarea name="message"></textarea>
+						<input type="submit" value="Send">
+					</form>
+				</body>
+
+
+			</section>
+			<section class="split contact" id="contactsFooter">
+
+				<section class="alt">
+					<h3>Meetup </h3>
+					<p><a href="https://www.meetup.com/the-tech-chasm/">https://www.meetup.com/the-tech-chasm/</a></p>
+				</section>
+				<!-- <section>
 								<h3>Phone</h3>
 								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+							</section> -->
+				<section>
+					<h3>Email</h3>
+					<p><a href="#">info@thetechchasm.com</a></p>
+				</section>
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/company/the-tech-chasm/" class="icon brands alt fa-linkedin"><span
+									class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; Built By Barento</li>
+				<li> <a href="https://builtbybarento.netlify.app/">https://builtbybarento.netlify.app/</a></li>
+			</ul>
+		</div>
 
-			</div>
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+			(function () {
+				emailjs.init({
+					publicKey: "ZQKpwfu8STEYdc4uG",
+				});
+			})();
+	</script>
 
-	</body>
+
+</body>
+
 </html>

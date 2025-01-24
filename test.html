@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript">
+        (function() {
+            // Initialize EmailJS
+            emailjs.init({
+                publicKey: "ZQKpwfu8STEYdc4uG",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                // Send form using EmailJS
+                emailjs.sendForm('service_ci9wu4d', 'template_h2gbxel', this)
+                    .then(() => {
+                        // Success notification
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Message Sent!',
+                            text: 'Your message has been successfully sent. Thank you!',
+                        });
+                        this.reset(); // Clear the form
+                    }, (error) => {
+                        // Error notification
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Message Failed',
+                            text: 'Sorry, your message could not be sent. Please try again.',
+                        });
+                        console.error('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <form id="contact-form">
+        <input type="hidden" name="contact_number" value="697483">
+        <label>Name</label>
+        <input type="text" name="user_name" required>
+        <label>Email</label>
+        <input type="email" name="user_email" required>
+        <label>Message</label>
+        <textarea name="message" required></textarea>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
