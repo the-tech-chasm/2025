@@ -17,6 +17,9 @@ importers:
       '@slidev/theme-seriph':
         specifier: latest
         version: 0.25.0
+      '@slidev/theme-shibainu':
+        specifier: ^0.25.0
+        version: 0.25.0
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.3)
@@ -756,6 +759,10 @@ packages:
 
   '@slidev/theme-seriph@0.25.0':
     resolution: {integrity: sha512-PnFQbn4I70+/cVie5iAr0Im6sYvnwjkO7Yj5KonTyJZFFJFytckLTrD3ijft/J4cRnz7OmSzTyQKNX1FN/x0YQ==}
+    engines: {node: '>=14.0.0', slidev: '>=v0.47.0'}
+
+  '@slidev/theme-shibainu@0.25.0':
+    resolution: {integrity: sha512-ND4ZdF3L3EOB2UXCaBqhMfMFeyPG6lOXwz/DC29aaXkXSnuHYjNKMI79NJAISyLBnUgWGc4QjIJNntIAx4Uung==}
     engines: {node: '>=14.0.0', slidev: '>=v0.47.0'}
 
   '@slidev/types@0.47.5':
@@ -3866,6 +3873,12 @@ snapshots:
       prism-theme-vars: 0.2.5
 
   '@slidev/theme-seriph@0.25.0':
+    dependencies:
+      '@slidev/types': 0.47.5
+      codemirror-theme-vars: 0.1.2
+      prism-theme-vars: 0.2.5
+
+  '@slidev/theme-shibainu@0.25.0':
     dependencies:
       '@slidev/types': 0.47.5
       codemirror-theme-vars: 0.1.2
