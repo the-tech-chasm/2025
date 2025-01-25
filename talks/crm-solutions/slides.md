@@ -5,12 +5,13 @@ theme: shibainu
 # like them? see https://unsplash.com/collections/94734566/slidev
 # background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: "CRM Solutions: Client Management Made Simple"
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+  ## Made from Slidev Starter Template
+  Presentation slides for the [CRM Solutions: Client Management Made Simple](https://www.meetup.com/the-tech-chasm/events/305383057/) talk hosted by [The Tech Chasm](https://thetechchasm.com).
 
-  Learn more at [Sli.dev](https://sli.dev)
+  Presented by [Sajana Mahinda Sri](https://www.linkedin.com/in/jan-mahinda-sri-485472112) and [Mumtahin Farabi](https://www.linkedin.com/in/mfarabi/).
+
 # apply unocss classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
@@ -22,13 +23,13 @@ transition: slide-left
 mdc: true
 ---
 
-# Welcome to Slidev
+# CRM Solutions: Client Management Made Simple
 
-Presentation slides for developers
+Part 2 - Technical
 
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
-</div>
+<!-- <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10"> -->
+<!--   Press Space for next page <carbon:arrow-right /> -->
+<!-- </div> -->
 
 <div class="abs-br m-6 text-xl">
   <button @click="$slidev.nav.openInEditor" title="Open in Editor" class="slidev-icon-btn">
