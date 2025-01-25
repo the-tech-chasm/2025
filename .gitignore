@@ -1,0 +1,5 @@
+# SSL certificate and key files
+*.key
+*.csr
+*.crt
+ssl.conf
