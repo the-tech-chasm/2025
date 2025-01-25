@@ -10,7 +10,7 @@ info: |
   ## Made from Slidev Starter Template
   Presentation slides for the [CRM Solutions: Client Management Made Simple](https://www.meetup.com/the-tech-chasm/events/305383057/) talk hosted by [The Tech Chasm](https://thetechchasm.com).
 
-  Presented by [Sajana Mahinda Sri](https://www.linkedin.com/in/jan-mahinda-sri-485472112) and [Mumtahin Farabi](https://www.linkedin.com/in/mfarabi/).
+  Presented by [Jan Mahinda Sri](https://www.linkedin.com/in/jan-mahinda-sri-485472112) and [Mumtahin Farabi](https://www.linkedin.com/in/mfarabi/).
 
 # apply unocss classes to the current slide
 class: text-center
@@ -25,7 +25,10 @@ mdc: true
 
 # CRM Solutions: Client Management Made Simple
 
+
 Part 2 - Technical, presented by [Mumtahin Farabi](https://www.linkedin.com/in/mfarabi/)
+
+[Part 1 - The SDR Perspective](https://prezi.com/view/4CZtcnqXFwMk5qy5johd/) by [Jan Mahinda Sri](https://www.linkedin.com/in/jan-mahinda-sri-485472112)
 
 <!-- <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10"> -->
 <!--   Press Space for next page <carbon:arrow-right /> -->
@@ -62,9 +65,19 @@ transition: fade-out
 ---
 
 # 👋 Introduction
+
+
+## Jan Mahinda Sri
+
+- Sales Development Representative (SDR) @ [Veem](https://www.veem.com/)
+- Professional Yapper
+
+## Mumtahin Farabi
 - 2nd year CS @ Carleton University - Minor in Business
 - Interned @ Ciena, and Emids
 - Currently at ChartHouse Labs
+- Tech Entertainer 
+  - [@techwithfarabi](https://www.instagram.com/techwithfarabi/)
 
 ---
 transition: fade-out
@@ -104,6 +117,8 @@ transition: fade-out
 # 🧑‍💻 Create Your Own 
 
 - [Jira]()
+
+![Image](https://github.com/user-attachments/assets/b766b28c-38fc-4df2-81b9-9eb7d86dda28)
 - [Notion]()
 - [Google Sheets + Apps Script API]()
 
