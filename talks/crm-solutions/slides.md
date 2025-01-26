@@ -26,6 +26,10 @@ mdc: true
 exportfilename: crm-solutions-the-tech-chasm
 colorSchema: dark
 favicon: "https://avatars.githubusercontent.com/u/193661266?s=200&v=4.svg"
+fonts:
+  sans: JetBrains Mono
+  serif: JetBrains Mono
+  mono: JetBrains Mono
 ---
 
 # CRM Solutions: Client Management Made Simple
