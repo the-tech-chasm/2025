@@ -25,24 +25,43 @@ mdc: true
 ---
 
 # CRM Solutions: Client Management Made Simple
+Presented by [Jan Mahinda Sri](https://www.linkedin.com/in/jan-mahinda-sri-485472112) and [Mumtahin Farabi](https://www.linkedin.com/in/mfarabi/)
 
+<div class="flex space-x-4 w-full justify-center">
+<a href="https://www.meetup.com/the-tech-chasm/events/305383057/" target="_blank" rel="noopener noreferrer" >
+<img src="https://cdn.worldvectorlogo.com/logos/meetup-1.svg" class="size-10"/>
+</a>
 
-Part 2 - Technical, presented by [Mumtahin Farabi](https://www.linkedin.com/in/mfarabi/)
+<a href="https://www.instagram.com/thetechchasm/" target="_blank" rel="noopener noreferrer" >
+<logos-instagram-icon/>
+</a>
 
-[Part 1 - The SDR Perspective](https://prezi.com/view/4CZtcnqXFwMk5qy5johd/) by [Jan Mahinda Sri](https://www.linkedin.com/in/jan-mahinda-sri-485472112)
+<a href="https://www.linkedin.com/company/the-tech-chasm/" target="_blank" rel="noopener noreferrer" >
+<logos-linkedin-icon />
+</a>
+
+<a href="https://www.youtube.com/@thetechchasm" target="_blank" rel="noopener noreferrer" >
+<logos-youtube-icon />
+</a>
+
+<a href="https://github.com/the-tech-chasm" target="_blank" rel="noopener noreferrer" >
+<logos-github-icon />
+</a>
+</div>
+
 
 <!-- <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10"> -->
 <!--   Press Space for next page <carbon:arrow-right /> -->
 <!-- </div> -->
 
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
-  </a>
-</div>
+<!-- <div class="abs-br m-6 text-xl"> -->
+<!--   <button @click="$slidev.nav.openInEditor" title="Open in Editor" class="slidev-icon-btn"> -->
+<!--     <carbon:edit /> -->
+<!--   </button> -->
+<!--   <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn"> -->
+<!--     <carbon:logo-github /> -->
+<!--   </a> -->
+<!-- </div> -->
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
@@ -61,6 +80,7 @@ Overview of what we'll be covering.
 <!--
 Here is another comment.
 -->
+
 ---
 transition: fade-out
 ---
