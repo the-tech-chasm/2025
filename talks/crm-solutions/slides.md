@@ -32,8 +32,9 @@ fonts:
   mono: JetBrains Mono
 ---
 
-# CRM Solutions: Client Management Made Simple
-Presented by [Jan Mahinda Sri](https://www.linkedin.com/in/jan-mahinda-sri-485472112) and [Mumtahin Farabi](https://www.linkedin.com/in/mfarabi/)
+<h1><span class="text-amber-500"> CRM Solutions:</span> Client Management Made <span class="text-yellow-400">Simple</span></h1>
+
+ By [Jan Mahinda Sri](https://www.linkedin.com/in/jan-mahinda-sri-485472112) and [Mumtahin Farabi](https://www.linkedin.com/in/mfarabi/)
 
 <div class="flex space-x-4 w-full justify-center">
 <a href="https://www.meetup.com/the-tech-chasm/events/305383057/" target="_blank" rel="noopener noreferrer" >
@@ -41,7 +42,7 @@ Presented by [Jan Mahinda Sri](https://www.linkedin.com/in/jan-mahinda-sri-48547
 </a>
 
 <a href="https://www.instagram.com/thetechchasm/" target="_blank" rel="noopener noreferrer" >
-<logos-instagram-icon/>
+<skill-icons-instagram />
 </a>
 
 <a href="https://www.linkedin.com/company/the-tech-chasm/" target="_blank" rel="noopener noreferrer" >
@@ -53,7 +54,7 @@ Presented by [Jan Mahinda Sri](https://www.linkedin.com/in/jan-mahinda-sri-48547
 </a>
 
 <a href="https://github.com/the-tech-chasm" target="_blank" rel="noopener noreferrer" >
-<logos-github-icon />
+<skill-icons-github-dark />
 </a>
 </div>
 
