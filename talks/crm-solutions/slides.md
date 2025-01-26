@@ -7,6 +7,7 @@
 author: Mumtahin Farabi
 # some information about your slides (markdown enabled)
 title: "CRM Solutions: Client Management Made Simple"
+titleTemplate: '%s - The Tech Chasm'
 info: |
   ## Made from Slidev Starter Template
   Presentation slides for the [CRM Solutions: Client Management Made Simple](https://www.meetup.com/the-tech-chasm/events/305383057/) talk hosted by [The Tech Chasm](https://thetechchasm.com).
