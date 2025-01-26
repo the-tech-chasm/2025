@@ -90,6 +90,44 @@ About Us
 transition: fade-out
 ---
 
+<h1 class="text-amber-500"> 👋 Speakers </h1>
+
+<div class="w-full flex justify-center space-x-4">
+
+<ProfileCard 
+  profileImage="https://media.licdn.com/dms/image/v2/D4E03AQH8dPF9DfS60Q/profile-displayphoto-shrink_800_800/B4EZN5PtBEGQAc-/0/1732905980746?e=1743033600&v=beta&t=01GUfNMdLnikADWLRlK4ZsrVdbq6NbQBtl1Je_sEQV0"
+  name="Jan Mahinda Sri"
+  role="SDR"
+  companyLogo="https://www.veem.com/wp-content/themes/veem-theme/public/images/veem-logo.svg"
+  companyLink="https://www.veem.com/"
+  companyName="Veem"
+  description="Founder & Professional Yapper @ The Tech Chasm"
+  :socialLinks="[
+    { url: 'https://www.linkedin.com/in/jan-mahinda-sri-485472112/', icon: 'logos-linkedin-icon', class: 'text-xl text-blue-600 hover:text-blue-800' },
+    { url: 'https://www.veem.com/', icon: 'i-mdi-web', class: 'text-xl hover:text-gray-800' },
+    { url: 'https://github.com/janchasm', icon: 'logos-github-icon', class: 'text-xl text-gray-600 hover:text-gray-800' },
+    { url: 'https://www.instagram.com/janmahinda', icon: 'logos-instagram-icon', class: 'text-xl text-pink-500 hover:text-pink-600' },
+    { url: 'https://thetechchasm.com', icon: 'i-mdi-earth', class: 'text-xl text-green-600 hover:text-green-700' }
+  ]"
+/>
+
+<ProfileCard 
+  profileImage="https://media.licdn.com/dms/image/v2/D4E03AQFpxJLWWAf_Sw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730870018543?e=1743638400&v=beta&t=aWQZ6AO9aK65LoIyp6XHBwuB8RaqrCd4NsyJ1oXGiqo"
+  name="Mumtahin Farabi"
+  role="SWE"
+  companyLogo="https://media.licdn.com/dms/image/v2/D560BAQHO_PK_d28WgA/company-logo_100_100/company-logo_100_100/0/1723738302750?e=1746057600&v=beta&t=aPBu9bHxasv8gLUC5PqgKIFirdE_yQveWZRnOgXrz8k"
+  companyLink="https://www.wtconsulting.xyz"
+  companyName="ChartHouse Labs"
+  description="Intern that made the slides & Guest Speaker"
+  :socialLinks="[
+    { url: 'https://www.linkedin.com/in/mfarabi', icon: 'logos-linkedin-icon', class: 'text-xl text-blue-600 hover:text-blue-800' },
+    { url: 'https://www.veem.com/', icon: 'i-mdi-web', class: 'text-xl hover:text-gray-800' },
+    { url: 'https://github.com/mfarabi619', icon: 'logos-github-icon', class: 'text-xl text-gray-600 hover:text-gray-800' },
+    { url: 'https://www.instagram.com/farabi.01', icon: 'logos-instagram-icon', class: 'text-xl text-pink-500 hover:text-pink-600' },
+    { url: 'https://mfarabi.dev', icon: 'i-mdi-earth', class: 'text-xl text-green-600 hover:text-green-700' }
+  ]"
+/>
+</div>
 ---
 transition: fade-out
 ---
