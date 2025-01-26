@@ -4,6 +4,7 @@ theme: shibainu
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 # background: https://cover.sli.dev
+author: Mumtahin Farabi
 # some information about your slides (markdown enabled)
 title: "CRM Solutions: Client Management Made Simple"
 info: |
