@@ -1,17 +1,16 @@
 ---
 # You can also start simply with 'default'
-theme: shibainu
+theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-# background: https://cover.sli.dev
+background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
-title: "CRM Solutions: Client Management Made Simple"
+title: Welcome to Slidev
 info: |
-  ## Made from Slidev Starter Template
-  Presentation slides for the [CRM Solutions: Client Management Made Simple](https://www.meetup.com/the-tech-chasm/events/305383057/) talk hosted by [The Tech Chasm](https://thetechchasm.com).
+  ## Slidev Starter Template
+  Presentation slides for developers.
 
-  Presented by [Sajana Mahinda Sri](https://www.linkedin.com/in/jan-mahinda-sri-485472112) and [Mumtahin Farabi](https://www.linkedin.com/in/mfarabi/).
-
+  Learn more at [Sli.dev](https://sli.dev)
 # apply unocss classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
@@ -21,22 +20,27 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
+# take snapshot for each slide in the overview
+overviewSnapshots: true
 ---
 
-# CRM Solutions: Client Management Made Simple
+# Welcome to Slidev
 
-Part 2 - Technical
+Presentation slides for developers
 
-<!-- <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10"> -->
-<!--   Press Space for next page <carbon:arrow-right /> -->
-<!-- </div> -->
+<div class="pt-12">
+  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
+    Press Space for next page <carbon:arrow-right class="inline"/>
+  </span>
+</div>
 
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor" title="Open in Editor" class="slidev-icon-btn">
+<div class="abs-br m-6 flex gap-2">
+  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
   </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
+  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub" title="Open in GitHub"
+    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
+    <carbon-logo-github />
   </a>
 </div>
 
@@ -69,6 +73,18 @@ You can have `style` tag in markdown to override the style for the current page.
 Learn more: https://sli.dev/features/slide-scope-style
 -->
 
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
 <!--
 Here is another comment.
 -->
@@ -84,12 +100,12 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 
 ## Keyboard Shortcuts
 
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
+|     |     |
+| --- | --- |
+| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
 | <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
+| <kbd>up</kbd> | previous slide |
+| <kbd>down</kbd> | next slide |
 
 <!-- https://sli.dev/guide/animations.html#click-animation -->
 <img
@@ -110,14 +126,14 @@ layoutClass: gap-16
 You can use the `Toc` component to generate a table of contents for your slides:
 
 ```html
-<Toc minDepth="1" maxDepth="1" />
+<Toc minDepth="1" maxDepth="1"></Toc>
 ```
 
 The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
 
 ::right::
 
-<Toc text-sm minDepth="1" maxDepth="2" />
+<Toc v-click minDepth="1" maxDepth="2"></Toc>
 
 ---
 layout: image-right
@@ -144,7 +160,7 @@ doubled.value = 2
 <arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
 
 <!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
+<<< ../../snippets/external.ts#snippet
 
 <!-- Footer -->
 
@@ -561,7 +577,7 @@ Double-click on the draggable elements to edit their positions.
 
 ```md
 <v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
+  <carbon:arrow-up />
   Use the `v-drag` component to have a draggable container!
 </v-drag>
 ```
@@ -583,7 +599,8 @@ Double-click on the draggable elements to edit their positions.
 <v-drag-arrow pos="67,452,253,46" two-way op70 />
 
 ---
-src: ./pages/imported-slides.md
+src: ../imported-slides.md
+
 hide: false
 ---
 
