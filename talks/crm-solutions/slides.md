@@ -24,6 +24,7 @@ transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 exportfilename: crm-solutions-the-tech-chasm
+colorSchema: dark
 ---
 
 # CRM Solutions: Client Management Made Simple
